@@ -2,6 +2,37 @@
 
 This project is a backend service for an online bookstore, designed using Spring Boot and MySQL. It provides RESTful APIs for managing book listings, shopping cart operations, and order tracking.
 
+# Project Structure
+
+```
+online-bookstore-backend/ 
+├── pom.xml 
+├── README.md 
+└── src/ 
+  └── main/ 
+      ├── java/ │ └── com/ │ └── bookstore/ 
+      │ ├── OnlineBookstoreBackendApplication.java 
+        │ ├── controller/ 
+          │ │ ├── BookController.java 
+          │ │ ├── CartController.java 
+          │ │ └── OrderController.java 
+        │ ├── model/ 
+          │ │ ├── Book.java 
+          │ │ ├── Cart.java 
+          │ │ └── Order.java 
+        │ ├── repository/ 
+          │ │ ├── BookRepository.java 
+          │ │ ├── CartRepository.java 
+          │ │ └── OrderRepository.java 
+        │ └── service/ 
+          │ ├── BookService.java 
+          │ ├── CartService.java 
+          │ └── OrderService.java 
+      └── resources/ 
+        ├── application.properties 
+        └── data.sql
+```
+
 ## Features
 
 - **Book Management**: 
